@@ -1,0 +1,327 @@
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #ccc;
+}
+
+/* <!----------------- Navbar ------------------------  --> */
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+ 
+}
+
+.navbar .left-section{
+display: flex;
+align-items: center;
+gap: 30px;
+}
+.navbar .left-section .logo{
+    color: blue;
+}
+.navbar .left-section .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .left-section .icons i{
+    font-size: 18px;
+}
+.navbar .left-section .navbar-search{
+    position: relative;
+}
+.navbar .left-section .navbar-search input{
+ width: 300px;
+ padding: 8px 25px;
+}
+
+.navbar .left-section .navbar-search i{
+    position: absolute;
+    left: 5px;
+    top: 9px;
+}
+.navbar .right-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} 
+
+.navbar .right-section img{
+    width: 30px;
+    border-radius: 50%;
+}
+.navbar .right-section h2{
+    color: blue;
+}
+
+/* Home */
+
+.home{
+    display: flex;
+    gap: 30px;
+}
+
+/* leftbar */
+
+.left-bar{
+    background-color: #fff;
+    width: 12%;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 10px;
+    position: sticky;
+    top: 0;
+}
+.left-bar .part{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+.left-bar .parts .part img{
+    width: 20px;
+    border-radius: 50%;
+}
+hr{
+    margin-top: 10px;
+}
+
+
+/* Middle-bar */
+
+.middle-bar .top-content{
+    margin-top: 20px;
+}
+.middle-bar .top-content .stories{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.middle-bar .top-content .stories .story{
+    position: relative;
+}
+.middle-bar .top-content .stories .story img{
+    width: 120px;
+    border-radius: 10px;
+}
+.middle-bar .top-content .stories .story h2{
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: #fff;
+}
+
+
+.middle-bar .down-content .posts .post{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.middle-bar .down-content .posts .post .top-sec {
+    display: flex;
+    justify-content: space-between;
+}
+.middle-bar .down-content .posts .post .top-sec div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.middle-bar .down-content .posts .post .top-sec div div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.middle-bar .down-content .posts .post .top-sec div div h2{
+    font-size: 16px;
+}
+.middle-bar .down-content .posts .post .top-sec div div p{
+    opacity: 0.5;
+}
+.middle-bar .down-content .posts .post .top-sec img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment{
+    margin: 20px 0;
+}
+.post-img{
+    width: 100%;
+    height: 300px;
+}
+
+ /* right-bar */
+
+ .right-bar {
+    margin-top: 10px;
+    width: 25%;
+    right: 10px;
+    position: sticky;
+    top: 0;
+ }
+ .right-bar-box{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+ }
+ .right-bar-box h2{
+    font-size: 18px;
+    opacity: 0.5;
+ }
+
+ .right-bar .right-bar-box div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+ }
+ .right-bar .right-bar-box div .right-bar-profile .p{
+    font-size: 14px;
+    margin-left: 10px;
+    opacity: 0.5;
+ } 
+ .right-bar .right-bar-box div .right-bar-profile p{
+    opacity: 0.5;
+ }
+ .right-bar .right-bar-box div .right-bar-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ .right-bar .right-bar-box div .right-bar-buttons button{
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+ }
+ .right-bar .right-bar-box div .right-bar-buttons .a{
+    background-color: blue;
+ }
+ .right-bar .right-bar-box .right-bar-profile img{
+    width: 30px;
+    border-radius: 50%;
+ }
+ .right-bar-box div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .right-bar-box div div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+ .right-bar-box div img{
+    width: 30px;
+    border-radius: 50%;
+ }
+ .right-bar-box div div p{
+    font-size: 14px;
+ }
+ .right-bar-box div div p span{
+    opacity: 0.5;
+ }
+ .minute{
+    opacity: 0.5;
+ }
+
+ /* Media Query */
+
+ @media screen and (max-width : 400px){
+    .navbar .left-section{
+    gap: 15px;
+    }
+    .navbar .left-section .logo{
+        font-size: 16px;
+    }
+    .navbar .left-section .icons{
+        gap: 10px;
+        margin-left: 60px;
+    }
+    .navbar .left-section .icons i{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .navbar .left-section .navbar-search{
+        display: none;
+    }
+    .navbar .right-section i{
+     display: none;
+    } 
+
+    .navbar .right-section h2{
+        display: none;
+    }
+    
+    .left-bar .parts .part p{
+        display: none;
+    }
+ 
+    .middle-bar .top-content .stories{
+        gap: 15px;
+    }
+    .middle-bar .top-content .stories .story img{
+        width: 40px;
+        border-radius: 10px;
+    }
+    .middle-bar .top-content .stories .story h2{
+        font-size: 8px;
+        line-height: 1.2;
+    }
+    
+    .middle-bar .down-content .posts{
+        margin-left: -10px;
+    }
+    .middle-bar .down-content .posts .post{
+        width: 80%;
+    }
+    .middle-bar .down-content .posts .post .top-sec {
+        display: flex;
+        justify-content: space-between;
+    }
+    .middle-bar .down-content .posts .post .top-sec div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .middle-bar .down-content .posts .post .top-sec div div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .middle-bar .down-content .posts .post .top-sec div div h2{
+        font-size: 16px;
+    }
+    .middle-bar .down-content .posts .post .top-sec div div p{
+        opacity: 0.5;
+    }
+    .middle-bar .down-content .posts .post .top-sec img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .comment{
+        margin: 20px 0;
+    }
+    .post-img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .right-bar{
+        display: none;
+    }
+ }
